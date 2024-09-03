@@ -1,0 +1,20 @@
+<table>
+    <thead>
+        <tr>
+            <% for ( var i=0;i < thead.length;i++ ) { %>
+                <th><%= thead[i].name %></th>
+            <% } %>
+        </tr>
+    </thead>
+    <tbody>
+        <% for ( var i=0;i < tbody.length; i++ ) { %>
+            <tr>
+                <% for ( var j=0;j < thead.length;j++ ) { %>
+                    <td><%= tbody[i][thead[j].name] %></td>
+                <% } %>
+            </tr>
+        <% } %>
+
+    </tbody>
+</table>
+
